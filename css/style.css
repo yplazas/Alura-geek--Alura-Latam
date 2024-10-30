@@ -1,0 +1,16 @@
+:root {
+    --color-primario: #ffffff;
+    --color-secundario: #5300c8;
+    --color-card: #5d04d9;
+    --color-boton: #03318c;
+}
+
+html {
+    line-height: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-primario);
+}
+
