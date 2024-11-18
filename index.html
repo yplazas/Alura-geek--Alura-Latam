@@ -7,6 +7,10 @@
     <title>Alura Geek</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/mostrarProductos.js" defer></script>
+    <script type="module" src="js/guardarProducto.js" defer></script>
+    <script type="module" src="js/eliminarProducto.js" defer></script>
+    <script type="module" src="js/sportApi.js" defer></script>
 </head>
 
 <body>
@@ -18,173 +22,19 @@
             <section class="main__productos">
                 <div class="productos__container">
                     <h2 class="productos__titulo">PRODUCTOS:</h2>
-                    <div class="productos__lista">
-                        <div class="producto">
-                            <img src="img/Producto1.jpg" alt="Producto 1" />
-                            <h3>Producto 1</h3>
-                            <p>$100.00</p>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke"
-                                    stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
-                                    stroke-width="2">
-                                    <path d="M4 7l16 0"></path>
-                                    <path d="M10 11l0 6"></path>
-                                    <path d="M14 11l0 6"></path>
-                                    <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
-                                    <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="producto">
-                            <img src="img/Producto2.jpg" alt="Producto 2" />
-                            <h3>Producto 2</h3>
-                            <p>$1000000.00</p>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke"
-                                    stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
-                                    stroke-width="2">
-                                    <path d="M4 7l16 0"></path>
-                                    <path d="M10 11l0 6"></path>
-                                    <path d="M14 11l0 6"></path>
-                                    <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
-                                    <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="producto">
-                            <img src="img/Producto3.jpg" alt="Producto 3" />
-                            <h3>Producto 3</h3>
-                            <p>$100.00</p>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke"
-                                    stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
-                                    stroke-width="2">
-                                    <path d="M4 7l16 0"></path>
-                                    <path d="M10 11l0 6"></path>
-                                    <path d="M14 11l0 6"></path>
-                                    <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
-                                    <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="producto">
-                            <img src="img/Producto1.jpg" alt="Producto 1" />
-                            <h3>Producto 1</h3>
-                            <p>$100.00</p>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke"
-                                    stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
-                                    stroke-width="2">
-                                    <path d="M4 7l16 0"></path>
-                                    <path d="M10 11l0 6"></path>
-                                    <path d="M14 11l0 6"></path>
-                                    <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
-                                    <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="producto">
-                            <img src="img/Producto2.jpg" alt="Producto 2" />
-                            <h3>Producto 2</h3>
-                            <p>$100.00</p>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke"
-                                    stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
-                                    stroke-width="2">
-                                    <path d="M4 7l16 0"></path>
-                                    <path d="M10 11l0 6"></path>
-                                    <path d="M14 11l0 6"></path>
-                                    <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
-                                    <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="producto">
-                            <img src="img/Producto3.jpg" alt="Producto 3" />
-                            <h3>Producto 3</h3>
-                            <p>$100.00</p>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke"
-                                    stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
-                                    stroke-width="2">
-                                    <path d="M4 7l16 0"></path>
-                                    <path d="M10 11l0 6"></path>
-                                    <path d="M14 11l0 6"></path>
-                                    <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
-                                    <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="producto">
-                            <img src="img/Producto1.jpg" alt="Producto 1" />
-                            <h3>Producto 1</h3>
-                            <p>$100.00</p>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke"
-                                    stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
-                                    stroke-width="2">
-                                    <path d="M4 7l16 0"></path>
-                                    <path d="M10 11l0 6"></path>
-                                    <path d="M14 11l0 6"></path>
-                                    <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
-                                    <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="producto">
-                            <img src="img/Producto2.jpg" alt="Producto 2" />
-                            <h3>Producto 2</h3>
-                            <p>$100.00</p>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke"
-                                    stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
-                                    stroke-width="2">
-                                    <path d="M4 7l16 0"></path>
-                                    <path d="M10 11l0 6"></path>
-                                    <path d="M14 11l0 6"></path>
-                                    <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
-                                    <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="producto">
-                            <img src="img/Producto3.jpg" alt="Producto 3" />
-                            <h3>Producto 3</h3>
-                            <p>$100.00</p>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke"
-                                    stroke-linecap="round" stroke-linejoin="round" width="24" height="24"
-                                    stroke-width="2">
-                                    <path d="M4 7l16 0"></path>
-                                    <path d="M10 11l0 6"></path>
-                                    <path d="M14 11l0 6"></path>
-                                    <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
-                                    <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
+                    <div id="productos-lista" class="productos__lista" data-lista-productos></div>
                 </div>
             </section>
             <section class="main__formulario">
                 <div class="formulario__container">
                     <h2 class="formulario__titulo">AGREGAR <br />PRODUCTO:</h2>
-                    <form action="" class="formulario__datos">
-                        <input type="text" name="" id="" placeholder="Nombre..." />
-                        <input type="number" name="" id="" placeholder="Precio..." />
-                        <input type="text" name="" id="" placeholder="Imagen..." />
+                    <form action="" class="formulario__datos" data-formulario>
+                        <input type="text" name="" id=""  placeholder="Nombre..." data-nombre />
+                        <input type="number" name="" id=""  placeholder="Precio..." data-precio />
+                        <input type="text" name="" id=""  placeholder="url imagen..." data-urlImagen />
                         <div class="botones__formulario">
-                            <button>Enviar</button>
-                            <button>Limpiar</button>
+                            <button id="enviarDatos">Enviar</button>
+                            <button id="limpiarDatos">Limpiar</button>
                         </div>
                     </form>
                 </div>

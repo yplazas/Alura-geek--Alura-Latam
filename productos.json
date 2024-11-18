@@ -1,25 +1,52 @@
 {
-    "productos": [
-        {
-            "id": 1,
-            "nombre": "Producto 1",
-            "precio": 100.50,
-            "imagen": "img/Producto1.jpg",
-            "cantidad": 2
-        },
-        {
-            "id": 2,
-            "nombre": "Producto 2",
-            "precio": 200.75,
-            "imagen": "img/Producto2.jpg",
-            "cantidad": 2
-        },
-        {
-            "id": 3,
-            "nombre": "Producto 3",
-            "precio": 300.25,
-            "imagen": "img/Producto3.jpg",
-            "cantidad": 2
-        }
-    ]
+  "productos": [
+    {
+      "id": "6067",
+      "nombre": "TENIS NIKE",
+      "precio": "$250.000",
+      "urlImagen": "https://azzurry.com/wp-content/uploads/2024/03/0051_DV5477-700-2.jpg"
+    },
+    {
+      "id": "6a6a",
+      "nombre": "TENIS GAMECOURT",
+      "precio": "$400.000",
+      "urlImagen": "https://assets.adidas.com/images/w_600,f_auto,q_auto/e6a2640715214394b41aaf6901377cf3_9366/Tenis_Gamecourt_2.0_para_Tenis_Verde_HQ8475_01_standard.jpg"
+    },
+    {
+      "id": "6a5e",
+      "nombre": "TENIS DURAMO",
+      "precio": "$280.000",
+      "urlImagen": "https://assets.adidas.com/images/w_600,f_auto,q_auto/c43b629673064f92830dafd3013e8c8e_9366/Tenis_Duramo_RC_Azul_ID2701_01_standard.jpg"
+    },
+    {
+      "id": "bc4d",
+      "nombre": "TENIS VANS",
+      "precio": "$290.000",
+      "urlImagen": "https://vansco.vteximg.com.br/arquivos/ids/320116-1000-1000/VN0A4BV5JV6-1.jpg?v=638333711326700000"
+    },
+    {
+      "id": "5cad",
+      "nombre": "TENIS OLD",
+      "precio": "$300.000",
+      "urlImagen": "https://sportzone.vtexassets.com/arquivos/ids/191981/VN0005UF1M7-Tenis-Vans-Old-Skool-Hombre-Cafe--2.jpg?v=638543236077400000"
+    },
+    {
+      "id": "2024",
+      "nombre": "TENIS KNU",
+      "precio": "$500.000",
+      "urlImagen": "https://vansco.vteximg.com.br/arquivos/ids/313065-1000-1000/VN0009QCNWD-1.jpg?v=638285694977700000"
+    },
+    {
+      "id": "8d5b",
+      "nombre": "TENIS JORDAN",
+      "precio": "$350.000",
+      "urlImagen": "https://sportzone.vtexassets.com/arquivos/ids/188043-800-auto?v=638365167167830000&width=800&height=auto&aspect=true"
+    },
+    {
+      "id": "f9ee",
+      "nombre": "TENIS LEVIS",
+      "precio": "$150.000",
+      "urlImagen": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/135992367_01/w=800,h=800,fit=pad"
+    }
+  ]
 }

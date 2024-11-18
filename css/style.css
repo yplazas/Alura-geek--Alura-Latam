@@ -62,21 +62,22 @@ header {
 
 .productos__lista {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill,
+            minmax(220px, 1fr));
+    /* linea para hacer las columnas responsivas */
     place-items: center;
+    max-width: 1000px;
     gap: 40px 10px;
     padding: 15px;
-    height: 745px;
-    overflow-y: scroll;
+    height: 675px;
+    overflow-y: auto;
 }
 
 .producto {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
-    width: 200px;
+    width: 220px;
     height: 300px;
     background-color: var(--color-card);
     color: var(--color-primario);
@@ -91,6 +92,18 @@ header {
     object-fit: cover;
     border: 3px solid var(--color-border);
     border-radius: 10px;
+}
+
+.producto-eliminar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
 }
 
 .formulario__container {
@@ -144,9 +157,29 @@ header {
     color: var(--color-primario);
     font-size: 20px;
     font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botones__formulario button:hover {
+    background-color: var(--color-border);
+}
+
+.botones__formulario button:active {
+    background-color: var(--color-boton);
 }
 
 .botones__formulario button:nth-child(2) {
+    background-color: var(--color-primario);
+    color: var(--color-boton);
+}
+
+.botones__formulario button:nth-child(2):hover {
+    background-color: var(--color-border);
+    color: var(--color-primario);
+}
+
+.botones__formulario button:nth-child(2):active {
     background-color: var(--color-primario);
     color: var(--color-boton);
 }
@@ -176,11 +209,11 @@ footer {
 
 @media (max-width: 1486px) {
     .productos__lista {
-        grid-template-columns: repeat(3, 1fr);
+        max-width: 800px;
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
     .main__container {
         gap: 30px;
     }
@@ -190,7 +223,7 @@ footer {
     }
 
     .productos__lista {
-        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
     }
 }
 
@@ -207,23 +240,11 @@ footer {
     }
 
     .productos__lista {
-        grid-template-columns: repeat(4, 1fr);
+        max-width: 1000px;
     }
 
     .formulario__container {
         padding: 0;
-    }
-}
-
-@media (max-width: 912px) {
-    .productos__lista {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 688px) {
-    .productos__lista {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -246,10 +267,6 @@ footer {
         width: 140px;
         height: 50px;
         font-size: 16px;
-    }
-
-    .productos__lista {
-        grid-template-columns: 1fr;
     }
 }
 
